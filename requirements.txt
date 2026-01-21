@@ -1,0 +1,32 @@
+# ===============================
+# Core Agent Frameworks
+# ===============================
+crewai==0.28.8
+litellm==1.30.3
+
+# ===============================
+# LangChain Ecosystem (Pydantic v2 compatible)
+# ===============================
+langchain==0.1.20
+langchain-core==0.1.53
+langchain-community==0.0.38
+langgraph==0.0.48
+
+# ===============================
+# Data Models & Validation
+# ===============================
+pydantic>=2.4.2,<3.0.0
+pydantic-settings>=2.0.3
+
+# ===============================
+# Environment & Utilities
+# ===============================
+python-dotenv==1.0.0
+requests==2.31.0
+rich==13.7.1
+
+# ===============================
+# Optional (future memory / vectors)
+# ===============================
+chromadb==0.4.24
+sentence-transformers==2.6.1

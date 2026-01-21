@@ -1,0 +1,57 @@
+┌───────────────────────────────┐
+│ Minimal User Input            │
+│ (Event Name / Trigger)        │
+└──────────────┬────────────────┘
+               ↓
+┌───────────────────────────────┐
+│ Event Context Inference Agent │
+│ (Auto-generate details)       │
+└──────────────┬────────────────┘
+               ↓
+┌───────────────────────────────┐
+│ Event Classification Agent   │
+│ (Normalize features)         │
+└──────────────┬────────────────┘
+               ↓
+┌───────────────────────────────┐
+│ Event RAG Agent               │
+│ (Rules, SOPs, Guidelines)    │
+└──────────────┬────────────────┘
+               ↓
+┌───────────────────────────────┐
+│ Event Risk Analysis Agent     │
+│ (Explainable rules)           │
+└──────────────┬────────────────┘
+               ↓
+┌───────────────────────────────┐
+│ Memory Retrieval Agent        │
+│ (ChromaDB – Past Events)     │
+└──────────────┬────────────────┘
+               ↓
+┌───────────────────────────────┐
+│ Similarity & Evidence Agent   │
+│ (Score, justify, adjust risk) │
+└──────────────┬────────────────┘
+               ↓
+┌───────────────────────────────┐
+│ Decision Intelligence         │
+│ Assembler Agent               │
+└──────────────┬────────────────┘
+        ┌───────┴─────────┐
+        ↓                 ↓
+┌──────────────┐   ┌──────────────────┐
+│ Internal     │   │ Marketing Website │
+│ Report       │   │ Generator Agent   │
+└──────────────┘   └──────────────────┘
+               ↓
+     (Event happens in real life)
+               ↓
+┌───────────────────────────────┐
+│ Post-Event Memory Update UI   │
+│ (Human validated)             │
+└──────────────┬────────────────┘
+               ↓
+┌───────────────────────────────┐
+│ Memory Update Module          │
+│ (Write to ChromaDB)           │
+└───────────────────────────────┘

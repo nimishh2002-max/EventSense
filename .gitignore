@@ -1,0 +1,22 @@
+Python
+
+pycache/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints/
+
+Virtual Env
+
+.env
+venv/
+env/
+
+Vector Database (Do NOT upload this)
+
+chroma_db/
+chroma_db_storage/
+
+OS
+
+.DS_Store
+Thumbs.db

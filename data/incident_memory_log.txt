@@ -1,0 +1,26 @@
+HISTORICAL INCIDENT LOG & LESSONS LEARNED
+Database Export: 2024
+
+EVENT ID: 2023-SPRING-FLING
+Type: Social / Concert
+Outcome: Failure (Safety Issue)
+Description: Overcrowding occurred at the main entrance gate at 8:00 PM. The ticket scanners were slow, causing a backup that blocked the fire lane.
+Lesson Learned: For events with >500 confirmed attendees, implement staggered entry times (by last name or ticket group) or open a second gate.
+
+EVENT ID: 2022-HACKATHON-FALL
+Type: Academic
+Outcome: Issue (Logistics)
+Description: The main WiFi network crashed 2 hours into the event due to too many simultaneous connections (3 devices per student).
+Lesson Learned: Request a dedicated high-bandwidth "Event Network" from IT services 48 hours prior. Do not rely on the standard "Guest" WiFi.
+
+EVENT ID: 2023-CHARITY-GALA
+Type: Fundraiser
+Outcome: Success
+Description: Heavy rain started 1 hour before the event. Because the "Rain Plan" was activated at noon, the transition to the Student Union ballroom was seamless.
+Lesson Learned: Early decision-making on weather is better than waiting. The "12:00 PM Call" rule works.
+
+EVENT ID: 2021-ROOFTOP-JAZZ
+Type: Performance
+Outcome: Critical Failure
+Description: A generator was placed too close to the intake vent of the HVAC system, causing fumes to enter the building. Fire department evacuated the event.
+Lesson Learned: Generators must be placed at least 25 feet away from building air intakes.

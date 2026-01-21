@@ -1,0 +1,64 @@
+You are an expert AI systems architect.
+
+I am building a hackathon project called “AgenticAI Event Intelligence”.
+This is NOT a chatbot and NOT simple automation.
+
+Goal:
+Design an agentic, memory-driven decision-support system for college campus event planning that:
+- auto-generates event details from minimal input (e.g., event name)
+- analyzes risk using explainable logic
+- compares against past events using institutional memory
+- prevents repeated mistakes
+- generates:
+  1) internal decision intelligence reports
+  2) a public-facing marketing event website
+
+Core principles:
+- Multi-agent architecture (each agent has a single responsibility)
+- Human-in-the-loop (no fully autonomous decisions)
+- Explainable logic over black-box ML
+- Memory must be evidence-based, not hallucinated
+
+Agents (must be explicit):
+1. Event Context Inference Agent – expands minimal input into structured event details with confidence levels
+2. Event Classification Agent – normalizes event attributes for risk & memory comparison
+3. Event RAG Agent – shared, read-only retrieval of rules, SOPs, safety guidelines, planning docs
+4. Event Risk Analysis Agent – rule-based risk scoring
+5. Memory Retrieval Agent – fetches similar past events from memory DB (no reasoning)
+6. Similarity & Evidence Agent – computes similarity, adjusts risk, extracts evidence
+7. Decision Intelligence Assembler – produces structured insights & recommendations
+8. Marketing Website Generator Agent – generates a colorful public landing page (no risks or memory exposed)
+9. Memory Update Module – stores post-event outcomes after human confirmation
+
+Memory design:
+- Use TWO vector stores:
+  1) Event Knowledge DB (RAG): rules, SOPs, safety guidelines
+  2) Event Memory DB: past events, issues, severity, lessons learned
+- Memory starts empty (cold start is expected)
+- Memory is READ-only during planning
+- Memory is WRITE-only after event completion
+- Memory updates require explicit human validation
+
+Event lifecycle:
+DRAFT → ANALYZED → CONFIRMED → COMPLETED
+- Memory read allowed in ANALYZED & CONFIRMED
+- Memory write allowed ONLY after COMPLETED
+- Event completion must be triggered by a human (“Mark Event as Completed”)
+
+UI requirements (dashboard, not chat):
+- Minimal input (event name)
+- Auto-generated event profile with confidence indicators
+- Tabs: Overview | Risk | Memory (historical evidence) | Website
+- Separate Post-Event Review UI for memory updates
+
+Outputs must include:
+- Numeric risk score + level
+- Similarity scores with past events
+- Historical evidence & lessons learned
+- Clear explanations
+- Actionable recommendations
+- Marketing website
+
+Use Gemini as the core reasoning LLM.
+Think like a systems architect, not a chatbot.
+Avoid buzzwords. Keep it hackathon-feasible.
