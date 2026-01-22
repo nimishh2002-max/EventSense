@@ -14,3 +14,10 @@
 "Weekly Chess Club meeting in Room 304 with 15 members" (This should result in a low risk score and minimal warnings.)
 
 In this sentences, we can see that 4 types of sentences.The sentences displayed in the double quotes are the input to the system.Only give this these sentences as input.
+################
+## Live Deployment Note
+
+This project uses Ollama for on-device LLM inference (edge AI).  
+Streamlit Cloud does not support running local LLM models, so the hosted UI demonstrates the frontend only.  
+
+The full working system is shown in the demo video and can be run locally or on a self-hosted server.
